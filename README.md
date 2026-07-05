@@ -1,5 +1,6 @@
 # CineFinder — Movie Catalog
 
+[![CI](https://github.com/LivailleDev/movie-catalog/actions/workflows/ci.yml/badge.svg)](https://github.com/LivailleDev/movie-catalog/actions/workflows/ci.yml)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-online-brightgreen)](https://calm-cendol-e2c842.netlify.app)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
@@ -22,6 +23,8 @@ search, and graceful states.
   (close on Escape or backdrop click, lazy-loaded images).
 - **Graceful degradation** — with no API key the app runs in demo mode on bundled
   sample data, so it always works; with a key it fetches live data and posters.
+- **Tested + CI** — unit tests (Vitest + Testing Library) for the debounce hook, the
+  API layer and the components, run on every push via GitHub Actions.
 
 ## Features
 
@@ -54,6 +57,17 @@ Type-check and build:
 npm run typecheck
 npm run build
 ```
+
+## Tests
+
+```bash
+npm test          # run the suite once (Vitest)
+npm run test:watch  # watch mode
+```
+
+22 tests cover the `useDebounce` hook (with fake timers), the API/demo-mode layer
+(`posterUrl`, search, details, error paths) and the `MovieCard` / `SearchBar`
+components. Tests run offline against sample data — no API key needed.
 
 ## Attribution
 
