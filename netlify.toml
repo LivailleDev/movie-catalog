@@ -1,0 +1,11 @@
+# Netlify deploy config. Set VITE_TMDB_KEY in the Netlify UI for live TMDB data;
+# without it, the site builds and runs in demo mode with sample movies.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
