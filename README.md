@@ -1,6 +1,6 @@
 # CineFinder — Movie Catalog
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-online-brightgreen)](https://unique-naiad-ad8b23.netlify.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-online-brightgreen)](https://calm-cendol-e2c842.netlify.app)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF)
@@ -9,7 +9,7 @@ A movie catalog built with **React + TypeScript**: browse trending films, search
 **TMDB** database, and open a details view — with fully typed API models, debounced
 search, and graceful states.
 
-**🔗 Live demo:** https://unique-naiad-ad8b23.netlify.app
+**🔗 Live demo:** https://calm-cendol-e2c842.netlify.app
 
 ![CineFinder](docs/screenshot.png)
 
